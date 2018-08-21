@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main colors -->
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#111111</color>
+    <color name="colorBackground">#212121</color>
+    <color name="colorSecondaryBackground">#303030</color>
+    <color name="colorPopUpBackground">#424242</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="colorAccentText">#69A1FF</color>
+    <color name="colorAccentNegative">#E53935</color>
+    <color name="colorText">#F3F3F3</color>
+    <color name="colorSecondaryText">#969696</color>
+
+    <color name="colorTasksOne">#dedede</color>
+    <color name="colorTasksTwo">#657DFF</color>
+    <color name="colorTasksThree">#C13EFF</color>
+    <color name="colorTasksFour">#37dcfe</color>
+    <color name="colorTasksFive">#37FEBD</color>
+
+</resources>

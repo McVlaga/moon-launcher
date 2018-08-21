@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.mcvlaga.moonlauncher">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:clearTaskOnLaunch="true"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:stateNotNeeded="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/icon">
+        <activity
+            android:name="io.github.mcvlaga.moonlauncher.home.HomeActivity"
+            android:theme="@style/HomeActivityTheme"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.github.mcvlaga.moonlauncher.settings.SettingsActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName="io.github.mcvlaga.moonlauncher.home.HomeActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.mcvlaga.moonlauncher.home.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name="io.github.mcvlaga.moonlauncher.home.tasks.list.TasksListActivity"
+            android:label="@string/action_tasks_list"
+            android:parentActivityName="io.github.mcvlaga.moonlauncher.home.HomeActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.mcvlaga.moonlauncher.home.HomeActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAEa9ty-Hij6Bi57MyG3q1auNv-l9bnHss"/>
+
+        <service
+            android:name="io.github.mcvlaga.moonlauncher.home.weather.data.WeatherSyncIntentService"
+            android:exported="false" />
+
+        <service
+            android:name="io.github.mcvlaga.moonlauncher.home.weather.data.WeatherFirebaseJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="io.github.mcvlaga.moonlauncher.home.weather.data.WeatherProvider"
+            android:authorities="@string/content_authority_weather"
+            android:exported="false" />
+
+        <provider
+            android:name="io.github.mcvlaga.moonlauncher.home.tasks.data.TasksProvider"
+            android:authorities="@string/content_authority_tasks"
+            android:exported="false" />
+
+        <provider
+            android:name="io.github.mcvlaga.moonlauncher.home.apps.data.AppsProvider"
+            android:authorities="@string/content_authority_apps"
+            android:exported="false" />
+    </application>
+
+</manifest>

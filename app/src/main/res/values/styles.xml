@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="preferenceTheme">@style/AppTheme.FixForPreferenceThemeOverlay</item>
+    </style>
+
+    <style name="HomeActivityTheme" parent="AppTheme">
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/colorSecondaryBackground</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="AppTheme.FixForPreferenceThemeOverlay" parent="PreferenceThemeOverlay.v14.Material">
+        <item name="preferenceFragmentListStyle">@style/AppTheme.FixForPreferenceFragmentList</item>
+    </style>
+
+    <style name="AppTheme.FixForPreferenceFragmentList">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_big">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_huge">72dp</dimen>
+    <dimen name="margin_card">16dp</dimen>
+
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+
+
+    <!-- Widgets -->
+    <dimen name="text_size_home_header">23sp</dimen>
+    <!-- Weather -->
+    <dimen name="margin_feels_like">-12dp</dimen>
+    <dimen name="margin_temperature">-8dp</dimen>
+    <dimen name="padding_degrees_symbol">3dp</dimen>
+    <dimen name="padding_temp_scale">5dp</dimen>
+
+    <dimen name="text_size_weather_content">16sp</dimen>
+    <dimen name="text_size_weather_content_smaller">14sp</dimen>
+    <dimen name="text_size_weather_daily_high">20sp</dimen>
+    <dimen name="text_size_weather_daily_low">17sp</dimen>
+    <dimen name="text_size_weather_daily_date">18sp</dimen>
+
+    <dimen name="text_size_weather_degrees">80sp</dimen>
+    <dimen name="text_size_weather_degrees_symbol">40sp</dimen>
+    <dimen name="text_size_weather_temp_scale">35sp</dimen>
+
+    <!-- Tasks -->
+    <dimen name="text_size_tasks_content">16sp</dimen>
+
+
+
+    <!-- Add to do dialog -->
+    <dimen name="text_size_add_tasks_button">16sp</dimen>
+    <dimen name="text_size_add_tasks_header">14sp</dimen>
+
+    <dimen name="margin_tasks_list_spinner_button">42dp</dimen>
+</resources>

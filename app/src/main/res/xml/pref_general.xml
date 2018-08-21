@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <PreferenceCategory
+        android:title="@string/pref_category_weather_title">
+
+        <CheckBoxPreference
+            android:key="@string/pref_show_weather_key"
+            android:title="@string/pref_show_weather_title"
+            android:defaultValue="@bool/pref_show_weather_default"
+            android:summaryOff="@string/pref_show_false"
+            android:summaryOn="@string/pref_show_true"/>
+
+        <Preference
+            android:key="@string/pref_location_key"
+            android:title="@string/pref_location_title"
+            android:summary="@string/pref_location_summary_default"/>
+
+        <ListPreference
+            android:defaultValue="@string/pref_units_default"
+            android:summary="@string/pref_units_summary_default"
+            android:entries="@array/pref_units_options"
+            android:entryValues="@array/pref_units_values"
+            android:key="@string/pref_units_key"
+            android:title="@string/pref_units_title" />
+
+        <Preference
+            android:key="@string/pref_num_forecast_key"
+            android:title="@string/pref_num_forecast_title"
+            android:summary="@string/pref_num_forecast_default"/>
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/divider_preference"/>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_tasks_title">
+
+        <CheckBoxPreference
+            android:key="@string/pref_show_tasks_key"
+            android:title="@string/pref_show_tasks_title"
+            android:defaultValue="@bool/pref_show_tasks_default"
+            android:summaryOff="@string/pref_show_false"
+            android:summaryOn="@string/pref_show_true"/>
+
+        <Preference
+            android:key="@string/pref_max_tasks_key"
+            android:title="@string/pref_max_tasks_title"
+            android:summary="@string/pref_max_tasks_default"/>
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/divider_preference"/>
+
+    <PreferenceCategory
+        android:title="App Drawer">
+
+        <Preference
+            android:key="@string/pref_hidden_apps_key"
+            android:title="@string/pref_hidden_apps_title"/>
+    </PreferenceCategory>
+</PreferenceScreen>

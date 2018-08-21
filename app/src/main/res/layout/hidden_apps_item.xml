@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hidden_app_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical">
+
+    <CheckBox
+        android:id="@+id/hidden_app_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:focusable="false"/>
+
+    <ImageView
+        android:id="@+id/hidden_app_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        tools:background="@drawable/weather_small_clear_day"/>
+
+    <TextView
+        android:id="@+id/hidden_app_name"
+        android:text=""
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Facebook"/>
+</LinearLayout>

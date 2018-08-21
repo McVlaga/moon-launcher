@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_small"
+    android:paddingTop="@dimen/margin_small"
+    android:paddingLeft="@dimen/margin_card"
+    android:paddingRight="@dimen/margin_card">
+
+    <TextView
+        android:id="@+id/forecast_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_weather_daily_date"
+        android:textColor="@color/colorSecondaryText"
+        android:fontFamily="sans-serif-light"
+        tools:text="Today, April 03"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/forecast_icon"
+        android:layout_width="50dp"
+        android:layout_height="32dp"
+        tools:src="@drawable/weather_small_partly_cloudy_day"
+        app:layout_constraintRight_toLeftOf="@+id/forecast_high"/>
+
+    <TextView
+        android:id="@+id/forecast_high"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="@dimen/text_size_weather_daily_high"
+        android:textColor="@color/colorText"
+        tools:text="15\u00b0\u2191"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/forecast_low"/>
+
+    <TextView
+        android:id="@+id/forecast_low"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="@dimen/text_size_weather_daily_low"
+        android:textColor="@color/colorSecondaryText"
+        tools:text="10\u00b0\u2193"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

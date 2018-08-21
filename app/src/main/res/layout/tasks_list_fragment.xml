@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/tasks_list_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:spinnerMode="dropdown"
+        android:paddingStart="@dimen/margin_huge"
+        android:paddingEnd="@dimen/margin_huge"
+        android:background="@color/colorAccent"
+        android:dropDownVerticalOffset="@dimen/margin_big"/>
+
+    <LinearLayout
+        android:id="@+id/tasks_list_spinner_button_parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/tasks_list_spinner_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="@dimen/margin_tasks_list_spinner_button"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/weather_arrow_vd_collapsed"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Idi nahuy"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/tasks_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_task_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_white_36dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/remove_completed_tasks_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_clear_white_36dp"
+        app:backgroundTint="@color/colorAccentNegative" />
+
+</android.support.design.widget.CoordinatorLayout>
